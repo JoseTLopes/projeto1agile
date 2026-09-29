@@ -1,0 +1,7 @@
+{
+  "name": "Gentlemen's Cut - Barbearia",
+  "description": "Barbearia Gentlemen's Cut com assistente virtual inteligente via Gemini e agendamento online via Cal.com.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

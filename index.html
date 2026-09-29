@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+<html lang="pt" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  
+  <!-- SEO & Metadados de Produção -->
+  <title>Gentlemen's Cut | Barbearia Tradicional & Agendamento Lisboa</title>
+  <meta name="description" content="Barbearia clássica de excelência na Avenida da Liberdade, Lisboa. Corte clássico, barboterapia com toalha quente e cuidados masculinos exclusivos. Reserve online." />
+  <meta name="keywords" content="barbearia lisboa, corte classico, barboterapia, gentlemen's cut, barbeiro avenida liberdade, agendamento barbearia" />
+  <meta name="author" content="Gentlemen's Cut" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://gentlemenscut.pt" />
+
+  <!-- Open Graph / Redes Sociais -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://gentlemenscut.pt" />
+  <meta property="og:title" content="Gentlemen's Cut | Barbearia Tradicional & Grooming Masculino" />
+  <meta property="og:description" content="Mais do que um corte: um ritual de distinção e cuidado pessoal. Agende a sua cadeira online via Cal.com." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1200&h=630&q=80" />
+  <meta property="og:locale" content="pt_PT" />
+  <meta property="og:site_name" content="Gentlemen's Cut" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Gentlemen's Cut | Barbearia Tradicional Lisboa" />
+  <meta name="twitter:description" content="A arte do corte clássico com a excelência moderna. Reserve a sua cadeira." />
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1200&h=630&q=80" />
+
+  <!-- Favicon SVG Vetorial Embutido (Selo Dourado com Tesoura) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%23131315' stroke='%23e9c176' stroke-width='3'/%3E%3Cpath d='M32 32 L68 68 M68 32 L32 68' stroke='%23e9c176' stroke-width='4' stroke-linecap='round'/%3E%3Ccircle cx='32' cy='72' r='8' fill='none' stroke='%23e9c176' stroke-width='3'/%3E%3Ccircle cx='68' cy='72' r='8' fill='none' stroke='%23e9c176' stroke-width='3'/%3E%3C/svg%3E" />
+  <meta name="theme-color" content="#131315" />
+
+  <!-- Tipografia Oficial Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN com Design System Exato do Stitch -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#e9c176",
+            "primary-container": "#c5a059",
+            "on-primary": "#412d00",
+            "on-primary-container": "#4e3700",
+            "tertiary": "#e7c35a",
+            "surface": "#131315",
+            "surface-dim": "#131315",
+            "surface-bright": "#39393b",
+            "surface-container-lowest": "#0e0e10",
+            "surface-container-low": "#1b1b1d",
+            "surface-container": "#201f21",
+            "surface-container-high": "#2a2a2c",
+            "surface-container-highest": "#353437",
+            "on-surface": "#e5e1e4",
+            "on-surface-variant": "#d1c5b4",
+            "outline": "#9a8f80",
+            "outline-variant": "#4e4639",
+            "error": "#ffb4ab",
+          },
+          fontFamily: {
+            "serif": ["'Playfair Display'", "Georgia", "serif"],
+            "sans": ["'Plus Jakarta Sans'", "sans-serif"],
+            "headline-lg": ["'Playfair Display'", "Georgia", "serif"],
+            "headline-md": ["'Playfair Display'", "Georgia", "serif"],
+            "headline-sm": ["'Playfair Display'", "Georgia", "serif"],
+            "body-lg": ["'Plus Jakarta Sans'", "sans-serif"],
+            "body-md": ["'Plus Jakarta Sans'", "sans-serif"],
+            "body-sm": ["'Plus Jakarta Sans'", "sans-serif"],
+          },
+          spacing: {
+            "space-xs": "0.25rem",
+            "space-sm": "0.5rem",
+            "space-md": "1rem",
+            "space-lg": "1.5rem",
+            "space-xl": "2.5rem",
+            "space-2xl": "4rem",
+            "margin-mobile": "1.25rem",
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- Estilos Customizados Complementares -->
+  <style>
+    /* Suavização de renderização e seleção */
+    html {
+      color-scheme: dark;
+      background-color: #131315;
+    }
+    ::selection {
+      background-color: #c5a059;
+      color: #131315;
+    }
+    /* Estilização da barra de rolagem */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #131315;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #2a2a2c;
+      border-radius: 4px;
+      border: 2px solid #131315;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #c5a059;
+    }
+    /* Efeito de brilho sutil dourado */
+    .gold-glow {
+      box-shadow: 0 4px 20px -2px rgba(233, 193, 118, 0.25);
+    }
+    .gold-glow-subtle {
+      box-shadow: 0 2px 12px 0 rgba(233, 193, 118, 0.12);
+    }
+    .gold-border-gradient {
+      border: 1px solid rgba(233, 193, 118, 0.2);
+    }
+    .gold-border-gradient:hover {
+      border-color: rgba(233, 193, 118, 0.45);
+    }
+    /* Suporte a Safe-Areas mobile */
+    .pt-safe {
+      padding-top: max(1rem, env(safe-area-inset-top));
+    }
+    .pb-safe {
+      padding-bottom: max(1rem, env(safe-area-inset-bottom));
+    }
+    /* Estilização da rolagem independente do Chatbot */
+    #chat-messages {
+      flex: 1 1 0%;
+      min-height: 0;
+      max-height: 100%;
+      overflow-y: auto;
+      overscroll-behavior: contain;
+      scrollbar-width: thin;
+      scrollbar-color: #4e4639 #201f21;
+      -webkit-overflow-scrolling: touch;
+    }
+    #chat-messages::-webkit-scrollbar {
+      width: 6px;
+    }
+    #chat-messages::-webkit-scrollbar-track {
+      background: #201f21;
+    }
+    #chat-messages::-webkit-scrollbar-thumb {
+      background: #353437;
+      border-radius: 9999px;
+    }
+    #chat-messages::-webkit-scrollbar-thumb:hover {
+      background: #e9c176;
+    }
+  </style>
+
+  <!-- ========================================================================= -->
+  <!-- CAL.COM OFFICIAL EMBED SCRIPT INITIALIZATION (SCRIPT OFICIAL)            -->
+  <!-- ========================================================================= -->
+  <script type="text/javascript">
+    (function (C, A, L) { 
+      let p = function (a, ar) { a.q.push(ar); }; 
+      let d = C.document; 
+      C.Cal = C.Cal || function () { 
+        let cal = C.Cal; 
+        let ar = arguments; 
+        if (!cal.loaded) { 
+          cal.ns = {}; 
+          cal.q = cal.q || []; 
+          d.head.appendChild(d.createElement("script")).src = A; 
+          cal.loaded = true; 
+        } 
+        if (ar[0] === L) { 
+          const api = function () { p(api, arguments); }; 
+          const namespace = ar[1]; 
+          api.q = api.q || []; 
+          if(typeof namespace === "string"){
+            cal.ns[namespace] = cal.ns[namespace] || api;
+            p(cal.ns[namespace], ar);
+            p(cal, ["initNamespace", namespace]);
+          } else p(cal, ar); 
+          return;
+        } 
+        p(cal, ar); 
+      }; 
+    })(window, "https://app.cal.com/embed/embed.js", "init");
+
+    // Inicialização da instância Cal.com
+    Cal("init", { origin: "https://cal.com" });
+  </script>
+</head>
+
+<body class="bg-surface text-on-surface font-sans antialiased min-h-screen flex flex-col selection:bg-primary selection:text-on-primary">
+
+  <!-- ========================================================================= -->
+  <!-- HEADER / NAVEGAÇÃO FIXA                                                  -->
+  <!-- ========================================================================= -->
+  <header class="fixed top-0 inset-x-0 z-50 bg-surface/90 backdrop-blur-xl border-b border-surface-container-high/60 transition-all duration-300" id="main-header">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+      
+      <!-- Lado Esquerdo: Botão Hamburger (Mobile) + Logótipo -->
+      <div class="flex items-center gap-3">
+        <button id="mobile-menu-btn" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="mobile-menu" class="md:hidden w-10 h-10 flex items-center justify-center text-on-surface hover:text-primary transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded">
+          <span class="material-symbols-outlined text-[26px]" id="menu-icon">menu</span>
+        </button>
+
+        <a href="#inicio" class="flex items-center gap-2.5 group focus:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded py-1">
+          <!-- Ícone / Selo Vetorial -->
+          <div class="w-9 h-9 rounded-full bg-surface-container-high border border-primary/30 flex items-center justify-center text-primary group-hover:border-primary transition-colors shrink-0">
+            <span class="material-symbols-outlined text-[20px]">content_cut</span>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-serif text-lg sm:text-xl font-semibold tracking-tight text-on-surface group-hover:text-primary transition-colors leading-none">Gentlemen's Cut</span>
+            <span class="text-[9px] uppercase tracking-[0.2em] text-primary/80 font-medium">Barbearia • Lisboa</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Centro: Links de Navegação Desktop -->
+      <nav class="hidden md:flex items-center gap-8" aria-label="Navegação Principal">
+        <a href="#inicio" class="text-sm font-medium text-on-surface hover:text-primary transition-colors tracking-wide">Início</a>
+        <a href="#menu-servicos" class="text-sm font-medium text-on-surface-variant hover:text-primary transition-colors tracking-wide">Serviços</a>
+        <a href="#agendamento" class="text-sm font-medium text-on-surface-variant hover:text-primary transition-colors tracking-wide flex items-center gap-1.5">
+          <span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+          Agendamento
+        </a>
+        <a href="#duvidas" class="text-sm font-medium text-on-surface-variant hover:text-primary transition-colors tracking-wide">Dúvidas</a>
+        <a href="#localizacao" class="text-sm font-medium text-on-surface-variant hover:text-primary transition-colors tracking-wide">Localização</a>
+      </nav>
+
+      <!-- Lado Direito: Ações Rápidas (Marcar e Telefone) -->
+      <div class="flex items-center gap-2 sm:gap-3">
+        <a href="tel:+351912429615" class="hidden sm:flex items-center gap-1.5 px-3 py-2 text-xs font-medium text-on-surface-variant hover:text-primary border border-surface-container-high rounded hover:border-primary/40 transition-colors" title="Ligar para marcação direta">
+          <span class="material-symbols-outlined text-[16px] text-primary">phone</span>
+          <span>912 429 615</span>
+        </a>
+
+        <a href="#agendamento" class="h-10 px-4 sm:px-5 rounded bg-primary text-on-primary text-xs uppercase font-bold tracking-widest flex items-center justify-center gap-1.5 hover:bg-tertiary transition-all gold-glow active:scale-[0.98]" id="header-cta-btn">
+          <span class="material-symbols-outlined text-[16px]">calendar_today</span>
+          <span>Marcar</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Menu Mobile Dropdown / Drawer -->
+    <div id="mobile-menu" class="hidden md:hidden bg-surface-container-lowest/95 backdrop-blur-2xl border-b border-surface-container-high px-5 py-6 transition-all duration-300">
+      <nav class="flex flex-col gap-4 text-base" aria-label="Navegação Mobile">
+        <a href="#inicio" class="mobile-nav-link flex items-center justify-between py-2 text-on-surface hover:text-primary border-b border-surface-container/60">
+          <span>Início</span>
+          <span class="material-symbols-outlined text-[18px] text-primary">chevron_right</span>
+        </a>
+        <a href="#menu-servicos" class="mobile-nav-link flex items-center justify-between py-2 text-on-surface hover:text-primary border-b border-surface-container/60">
+          <span>Serviços de Mestre</span>
+          <span class="material-symbols-outlined text-[18px] text-primary">chevron_right</span>
+        </a>
+        <a href="#agendamento" class="mobile-nav-link flex items-center justify-between py-2 text-primary font-medium border-b border-surface-container/60">
+          <span class="flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+            Reservar Cadeira (Cal.com)
+          </span>
+          <span class="material-symbols-outlined text-[18px] text-primary">calendar_month</span>
+        </a>
+        <a href="#duvidas" class="mobile-nav-link flex items-center justify-between py-2 text-on-surface hover:text-primary border-b border-surface-container/60">
+          <span>Dúvidas Frequentes</span>
+          <span class="material-symbols-outlined text-[18px] text-primary">chevron_right</span>
+        </a>
+        <a href="#localizacao" class="mobile-nav-link flex items-center justify-between py-2 text-on-surface hover:text-primary">
+          <span>Contacto & Localização</span>
+          <span class="material-symbols-outlined text-[18px] text-primary">location_on</span>
+        </a>
+      </nav>
+
+      <div class="mt-6 pt-5 border-t border-surface-container flex flex-col gap-3">
+        <div class="flex items-center gap-3 text-xs text-on-surface-variant">
+          <span class="material-symbols-outlined text-[18px] text-primary">schedule</span>
+          <span>Seg - Sex: 09:00 às 20:00 • Sáb: 09:00 às 14:00</span>
+        </div>
+        <a href="tel:+351912429615" class="w-full py-3 rounded bg-surface-container-high text-primary hover:bg-surface-container font-semibold text-xs tracking-wider uppercase flex items-center justify-center gap-2">
+          <span class="material-symbols-outlined text-[16px]">call</span>
+          <span>Ligar +351 912 429 615</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================= -->
+  <!-- CONTEÚDO PRINCIPAL (MAIN)                                                -->
+  <!-- ========================================================================= -->
+  <main class="flex-grow pt-16">
+
+    <!-- 1. HERO SECTION CINEMATOGRÁFICA -->
+    <section id="inicio" class="relative w-full overflow-hidden bg-surface-container-lowest min-h-[580px] lg:min-h-[640px] flex items-center">
+      <!-- Imagem de Fundo com Otimização de Carregamento e Filtros Dark Luxury -->
+      <div class="absolute inset-0 z-0">
+        <img 
+          src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=1920&q=80" 
+          alt="Ambiente exclusivo da barbearia Gentlemen's Cut" 
+          class="w-full h-full object-cover object-center scale-105 transform motion-safe:transition-transform motion-safe:duration-1000"
+          width="1920" 
+          height="1080" 
+          fetchpriority="high"
+        />
+        <!-- Camadas de Degradé para Contraste Textual Máximo -->
+        <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/85 to-surface-container-lowest/40"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-surface-container-lowest via-surface-container-lowest/70 to-transparent"></div>
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,rgba(14,14,16,0.85)_100%)]"></div>
+      </div>
+
+      <!-- Conteúdo do Hero -->
+      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24 w-full">
+        <div class="max-w-2xl">
+          
+          <!-- Badge de Selo de Prestígio -->
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 mb-5 rounded-full bg-surface-container-high/85 backdrop-blur-md border border-primary/20 shadow-sm">
+            <span class="material-symbols-outlined text-primary text-[15px]">verified</span>
+            <span class="text-[11px] font-semibold text-primary tracking-widest uppercase">ESTD. 2018 • EXPERIÊNCIA ARTISANAL</span>
+          </div>
+
+          <!-- Título Principal com Tipografia Editorial Serif -->
+          <h1 class="font-serif text-3xl sm:text-5xl lg:text-6xl text-on-surface font-semibold tracking-tight leading-[1.15] mb-4 text-balance">
+            A Arte do Corte Clássico com a <span class="text-primary italic">Excelência Moderna</span>.
+          </h1>
+
+          <!-- Subtítulo -->
+          <p class="text-base sm:text-lg text-on-surface-variant font-normal leading-relaxed mb-8 max-w-xl text-pretty">
+            Mais do que um simples corte de cabelo: um ritual de distinção, estilo e cuidado pessoal reservado aos cavalheiros mais exigentes.
+          </p>
+
+          <!-- CTAs Primários -->
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 mb-8">
+            <a href="#agendamento" class="h-13 px-7 rounded bg-primary text-on-primary font-semibold text-xs tracking-widest uppercase flex items-center justify-center gap-2 gold-glow hover:bg-tertiary transition-all active:scale-[0.98]">
+              <span class="material-symbols-outlined text-[18px]">calendar_month</span>
+              <span>Marcar Agendamento</span>
+            </a>
+            <a href="#menu-servicos" class="h-13 px-6 rounded bg-surface-container-high/90 text-primary hover:bg-surface-container font-semibold text-xs tracking-widest uppercase flex items-center justify-center gap-2 border border-surface-container-highest hover:border-primary/40 transition-all active:scale-[0.98]">
+              <span class="material-symbols-outlined text-[18px]">content_cut</span>
+              <span>Ver Serviços & Preços</span>
+            </a>
+          </div>
+
+          <!-- Prova Social (Avaliações dos Clientes) -->
+          <div class="inline-flex items-center gap-2.5 text-on-surface-variant bg-surface-container/80 backdrop-blur-md px-4 py-2.5 rounded-full border border-surface-container-high">
+            <div class="flex text-primary">
+              <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+            </div>
+            <span class="text-sm font-semibold text-on-surface">4.9/5</span>
+            <span class="text-outline-variant">•</span>
+            <span class="text-xs sm:text-sm text-on-surface-variant">+3.800 cavalheiros atendidos em Lisboa</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. SERVIÇOS / MENU DE ASSINATURA -->
+    <section id="menu-servicos" class="w-full py-16 sm:py-24 bg-surface-container-lowest border-t border-surface-container-low">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Cabeçalho da Secção -->
+        <div class="max-w-2xl mb-12">
+          <div class="flex items-center gap-2.5 mb-2">
+            <span class="h-[1.5px] w-7 bg-primary"></span>
+            <span class="text-xs text-primary font-semibold tracking-widest uppercase">MENU DE ASSINATURA</span>
+          </div>
+          <h2 class="font-serif text-2xl sm:text-4xl text-on-surface font-semibold tracking-tight">Serviços de Mestre</h2>
+          <p class="text-sm sm:text-base text-on-surface-variant mt-2 leading-relaxed">
+            Tratamentos desenhados com precisão milimétrica e técnicas consagradas pela história da barbearia internacional.
+          </p>
+        </div>
+
+        <!-- Grade Responsiva de Cartões (1 Coluna Mobile, 2 Colunas Tablet, 4 Colunas Desktop) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+          <!-- Card 1: Corte Clássico -->
+          <article class="flex flex-col justify-between bg-surface-container p-6 rounded-lg gold-border-gradient transition-all duration-300 hover:-translate-y-1 hover:shadow-xl group">
+            <div>
+              <div class="flex justify-between items-start mb-3">
+                <span class="text-[10px] font-semibold text-primary uppercase tracking-wider">01. RITUAL CAPILAR</span>
+                <div class="flex items-center gap-1 text-on-surface-variant">
+                  <span class="material-symbols-outlined text-[15px]">schedule</span>
+                  <span class="text-xs">40 min</span>
+                </div>
+              </div>
+              <h3 class="font-serif text-xl font-semibold text-on-surface group-hover:text-primary transition-colors">Corte de Cabelo</h3>
+              <p class="text-primary font-serif text-2xl font-bold mt-1 mb-3">15€</p>
+              <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed mb-6">
+                Consulta de visagismo, lavagem revigorante com champô adequado, secagem e finalização com pomada ou cera artesanal de excelência.
+              </p>
+            </div>
+            <button 
+              type="button" 
+              onclick="selectServiceAndScroll('Corte de Cabelo', '15€ - 40 min')"
+              class="w-full py-2.5 px-4 rounded bg-surface-container-high text-primary hover:bg-primary hover:text-on-primary text-xs font-semibold tracking-wider uppercase transition-colors flex items-center justify-center gap-1.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+            >
+              <span class="material-symbols-outlined text-[16px]">content_cut</span>
+              <span>Selecionar Serviço</span>
+            </button>
+          </article>
+
+          <!-- Card 2: Arranjo de Barba -->
+          <article class="flex flex-col justify-between bg-surface-container p-6 rounded-lg gold-border-gradient transition-all duration-300 hover:-translate-y-1 hover:shadow-xl group">
+            <div>
+              <div class="flex justify-between items-start mb-3">
+                <span class="text-[10px] font-semibold text-primary uppercase tracking-wider">02. BARBOTERAPIA</span>
+                <div class="flex items-center gap-1 text-on-surface-variant">
+                  <span class="material-symbols-outlined text-[15px]">schedule</span>
+                  <span class="text-xs">30 min</span>
+                </div>
+              </div>
+              <h3 class="font-serif text-xl font-semibold text-on-surface group-hover:text-primary transition-colors">Arranjo de Barba</h3>
+              <p class="text-primary font-serif text-2xl font-bold mt-1 mb-3">10€</p>
+              <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed mb-6">
+                Desenho de contornos à navalha, toalha quente, aplicação de óleos essenciais nutritivos e bálsamo hidratante calmante.
+              </p>
+            </div>
+            <button 
+              type="button" 
+              onclick="selectServiceAndScroll('Arranjo de Barba', '10€ - 30 min')"
+              class="w-full py-2.5 px-4 rounded bg-surface-container-high text-primary hover:bg-primary hover:text-on-primary text-xs font-semibold tracking-wider uppercase transition-colors flex items-center justify-center gap-1.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+            >
+              <span class="material-symbols-outlined text-[16px]">content_cut</span>
+              <span>Selecionar Serviço</span>
+            </button>
+          </article>
+
+          <!-- Card 3: Corte Infantil -->
+          <article class="flex flex-col justify-between bg-surface-container p-6 rounded-lg gold-border-gradient transition-all duration-300 hover:-translate-y-1 hover:shadow-xl group">
+            <div>
+              <div class="flex justify-between items-start mb-3">
+                <span class="text-[10px] font-semibold text-primary uppercase tracking-wider">03. INFANTIL</span>
+                <div class="flex items-center gap-1 text-on-surface-variant">
+                  <span class="material-symbols-outlined text-[15px]">schedule</span>
+                  <span class="text-xs">30 min</span>
+                </div>
+              </div>
+              <h3 class="font-serif text-xl font-semibold text-on-surface group-hover:text-primary transition-colors">Corte Infantil</h3>
+              <p class="text-primary font-serif text-2xl font-bold mt-1 mb-3">12€</p>
+              <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed mb-6">
+                Cortes especiais e dedicados para crianças a partir dos 4 anos. Ambiente seguro, descontraído e com acabamento de alta qualidade.
+              </p>
+            </div>
+            <button 
+              type="button" 
+              onclick="selectServiceAndScroll('Corte Infantil', '12€ - 30 min')"
+              class="w-full py-2.5 px-4 rounded bg-surface-container-high text-primary hover:bg-primary hover:text-on-primary text-xs font-semibold tracking-wider uppercase transition-colors flex items-center justify-center gap-1.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+            >
+              <span class="material-symbols-outlined text-[16px]">content_cut</span>
+              <span>Selecionar Serviço</span>
+            </button>
+          </article>
+
+          <!-- Card 4: Pacote Completo (Corte + Barba) (Destaque Principal) -->
+          <article class="relative flex flex-col justify-between bg-surface-container-high p-6 rounded-lg border-2 border-primary/60 shadow-xl transition-all duration-300 hover:-translate-y-1 group">
+            <div class="absolute -top-3 right-4 bg-primary text-on-primary px-3 py-0.5 text-[10px] font-bold tracking-widest uppercase rounded shadow-sm">
+              Mais Escolhido
+            </div>
+            <div>
+              <div class="flex justify-between items-start mb-3 pt-1">
+                <span class="text-[10px] font-semibold text-primary uppercase tracking-wider">04. PACOTE COMPLETO</span>
+                <div class="flex items-center gap-1 text-on-surface-variant">
+                  <span class="material-symbols-outlined text-[15px]">schedule</span>
+                  <span class="text-xs">60 min</span>
+                </div>
+              </div>
+              <h3 class="font-serif text-xl font-semibold text-on-surface group-hover:text-primary transition-colors">Corte + Barba</h3>
+              <p class="text-primary font-serif text-2xl font-bold mt-1 mb-3">22€</p>
+              <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed mb-6">
+                A experiência integral: Corte de cabelo completo com lavagem + arranjo de barba com toalha quente e finalização com produtos premium.
+              </p>
+            </div>
+            <button 
+              type="button" 
+              onclick="selectServiceAndScroll('Pacote Completo (Corte + Barba)', '22€ - 60 min')"
+              class="w-full py-2.5 px-4 rounded bg-primary text-on-primary hover:bg-tertiary text-xs font-bold tracking-wider uppercase transition-all gold-glow flex items-center justify-center gap-1.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+            >
+              <span class="material-symbols-outlined text-[16px]">stars</span>
+              <span>Reservar Pacote</span>
+            </button>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 3. SECÇÃO DE AGENDAMENTO REAL INTEGRADA COM CAL.COM                       -->
+    <!-- ========================================================================= -->
+    <section id="agendamento" class="w-full py-16 sm:py-24 bg-surface-container-low border-t border-surface-container">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Cabeçalho da Secção de Agendamento -->
+        <div class="text-center max-w-3xl mx-auto mb-10">
+          <div class="inline-flex items-center gap-2 mb-2">
+            <span class="h-[1.5px] w-6 bg-primary"></span>
+            <span class="text-xs text-primary font-semibold tracking-widest uppercase">MARCAÇÃO ONLINE EM TEMPO REAL</span>
+            <span class="h-[1.5px] w-6 bg-primary"></span>
+          </div>
+          <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl text-on-surface font-semibold tracking-tight">Reserve a sua Cadeira</h2>
+          <p class="text-sm sm:text-base text-on-surface-variant mt-3 max-w-xl mx-auto">
+            Escolha o dia, horário e serviço com sincronização direta na nossa agenda. Sem filas e com confirmação imediata.
+          </p>
+          
+          <!-- Banner Informativo de Serviço Selecionado (Atualizado dinamicamente por JS) -->
+          <div id="service-selected-banner" class="hidden mt-6 inline-flex items-center gap-3 bg-surface-container-high border border-primary/40 px-5 py-2.5 rounded-full text-xs text-on-surface animate-fadeIn">
+            <span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+            <span>Serviço pretendido: <strong id="selected-service-name" class="text-primary font-semibold">Corte Clássico</strong></span>
+            <button type="button" onclick="clearServiceSelection()" class="text-on-surface-variant hover:text-error ml-2 text-xs" title="Remover seleção">✕</button>
+          </div>
+        </div>
+
+        <!-- Container do Embed Cal.com (Estilizado em Dark Mode) -->
+        <div class="max-w-4xl mx-auto bg-surface-container rounded-xl gold-border-gradient p-2 sm:p-6 shadow-2xl overflow-hidden relative">
+          
+          <!-- Barra Superior do Agendador com Indicador de Conexão Segura -->
+          <div class="flex flex-wrap items-center justify-between gap-3 px-3 py-2.5 mb-3 border-b border-surface-container-high text-xs text-on-surface-variant">
+            <div class="flex items-center gap-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+              <span class="font-medium text-on-surface">Agenda Oficial • Gentlemen's Cut</span>
+            </div>
+            <div class="flex items-center gap-3 text-[11px]">
+              <span class="flex items-center gap-1">
+                <span class="material-symbols-outlined text-[14px] text-primary">verified_user</span>
+                Confirmação Automática
+              </span>
+              <span class="text-outline-variant">|</span>
+              <span class="flex items-center gap-1">
+                <span class="material-symbols-outlined text-[14px] text-primary">event_available</span>
+                Cancelamento Gratuito
+              </span>
+            </div>
+          </div>
+
+          <!-- ========================================================================= -->
+          <!-- ELEMENTO EMBED OFICIAL DO CAL.COM (INLINE EMBED CONTAINER)                -->
+          <!-- ========================================================================= -->
+          <div class="relative w-full min-h-[620px] rounded-lg overflow-hidden bg-surface-container-lowest">
+            <!-- Elemento onde o script oficial do Cal.com renderiza a agenda -->
+            <div id="cal-inline-embed" class="w-full h-full min-h-[620px] overflow-auto"></div>
+          </div>
+
+          <!-- Nota Informativa de Suporte sob a Agenda -->
+          <div class="mt-4 pt-3 border-t border-surface-container-high/60 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-on-surface-variant">
+            <span class="flex items-center gap-1.5">
+              <span class="material-symbols-outlined text-[16px] text-primary">local_cafe</span>
+              Café de torrefação artesanal ou Single Malt escocês cortesia incluídos na sua visita.
+            </span>
+            <div class="flex items-center gap-3">
+              <a href="https://cal.com/jose-lopes-r6m7oq" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors inline-flex items-center gap-1">
+                <span>Abrir no Cal.com</span>
+                <span class="material-symbols-outlined text-[13px]">open_in_new</span>
+              </a>
+              <span class="text-outline-variant">|</span>
+              <a href="tel:+351912429615" class="hover:text-primary transition-colors underline sm:no-underline">
+                Marcação por chamada: 912 429 615
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. PERGUNTAS FREQUENTES (FAQ ACCORDION) -->
+    <section id="duvidas" class="w-full py-16 sm:py-24 bg-surface-container-lowest border-t border-surface-container-low">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Cabeçalho FAQ -->
+        <div class="text-center mb-12">
+          <div class="inline-flex items-center gap-2 mb-2">
+            <span class="h-[1.5px] w-6 bg-primary"></span>
+            <span class="text-xs text-primary font-semibold tracking-widest uppercase">DÚVIDAS FREQUENTES</span>
+            <span class="h-[1.5px] w-6 bg-primary"></span>
+          </div>
+          <h2 class="font-serif text-2xl sm:text-4xl text-on-surface font-semibold tracking-tight">Tudo o que Precisa Saber</h2>
+          <p class="text-sm sm:text-base text-on-surface-variant mt-2 max-w-xl mx-auto">
+            Transparência e cortesia para garantir a sua tranquilidade antes mesmo de entrar no salão.
+          </p>
+        </div>
+
+        <!-- Lista Acordeão de Perguntas -->
+        <div class="flex flex-col gap-3" id="faq-list">
+
+          <!-- FAQ 1: Preços -->
+          <div class="bg-surface-container rounded-lg overflow-hidden border border-surface-container-high/40 transition-colors hover:border-primary/30">
+            <button 
+              type="button" 
+              class="faq-btn w-full p-5 sm:p-6 text-left flex justify-between items-center gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+              aria-expanded="false" 
+              aria-controls="faq-ans-1"
+            >
+              <span class="font-serif text-base sm:text-lg font-semibold text-on-surface">Qual é o valor dos serviços principais?</span>
+              <span class="material-symbols-outlined text-primary text-[22px] transition-transform duration-300 shrink-0 faq-icon">expand_more</span>
+            </button>
+            <div id="faq-ans-1" class="faq-content hidden px-5 pb-5 sm:px-6 sm:pb-6 text-sm text-on-surface-variant leading-relaxed">
+              O corte de cabelo é 15€ e o arranjo de barba é 10€. O pacote completo (Corte + Barba) fica por 22€. O corte infantil (a partir dos 4 anos) é 12€. Trabalhos técnicos (descolorações, madeixas ou pinturas) variam entre 25€ e 45€ após avaliação no salão.
+            </div>
+          </div>
+
+          <!-- FAQ 2: Marcação vs Ordem de Chegada -->
+          <div class="bg-surface-container rounded-lg overflow-hidden border border-surface-container-high/40 transition-colors hover:border-primary/30">
+            <button 
+              type="button" 
+              class="faq-btn w-full p-5 sm:p-6 text-left flex justify-between items-center gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+              aria-expanded="false" 
+              aria-controls="faq-ans-2"
+            >
+              <span class="font-serif text-base sm:text-lg font-semibold text-on-surface">É necessário fazer marcação ou atendem por ordem de chegada?</span>
+              <span class="material-symbols-outlined text-primary text-[22px] transition-transform duration-300 shrink-0 faq-icon">expand_more</span>
+            </button>
+            <div id="faq-ans-2" class="faq-content hidden px-5 pb-5 sm:px-6 sm:pb-6 text-sm text-on-surface-variant leading-relaxed">
+              Recomendamos vivamente a marcação prévia através da nossa plataforma online ou telefone para garantir o seu horário. Também atendemos clientes sem marcação mediante a disponibilidade no momento.
+            </div>
+          </div>
+
+          <!-- FAQ 3: Cancelamento e Atrasos -->
+          <div class="bg-surface-container rounded-lg overflow-hidden border border-surface-container-high/40 transition-colors hover:border-primary/30">
+            <button 
+              type="button" 
+              class="faq-btn w-full p-5 sm:p-6 text-left flex justify-between items-center gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+              aria-expanded="false" 
+              aria-controls="faq-ans-3"
+            >
+              <span class="font-serif text-base sm:text-lg font-semibold text-on-surface">Como funciona o cancelamento e qual a tolerância de atraso?</span>
+              <span class="material-symbols-outlined text-primary text-[22px] transition-transform duration-300 shrink-0 faq-icon">expand_more</span>
+            </button>
+            <div id="faq-ans-3" class="faq-content hidden px-5 pb-5 sm:px-6 sm:pb-6 text-sm text-on-surface-variant leading-relaxed">
+              Pedimos que qualquer cancelamento ou reagendamento seja comunicado com pelo menos 12 horas de antecedência. Dispomos de uma tolerância máxima de 10 minutos para atrasos de forma a não comprometer os agendamentos seguintes.
+            </div>
+          </div>
+
+          <!-- FAQ 4: Lavagem de Cabelo -->
+          <div class="bg-surface-container rounded-lg overflow-hidden border border-surface-container-high/40 transition-colors hover:border-primary/30">
+            <button 
+              type="button" 
+              class="faq-btn w-full p-5 sm:p-6 text-left flex justify-between items-center gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+              aria-expanded="false" 
+              aria-controls="faq-ans-4"
+            >
+              <span class="font-serif text-base sm:text-lg font-semibold text-on-surface">A lavagem de cabelo está incluída no corte?</span>
+              <span class="material-symbols-outlined text-primary text-[22px] transition-transform duration-300 shrink-0 faq-icon">expand_more</span>
+            </button>
+            <div id="faq-ans-4" class="faq-content hidden px-5 pb-5 sm:px-6 sm:pb-6 text-sm text-on-surface-variant leading-relaxed">
+              Sim, todos os nossos cortes incluem lavagem com champô adequado, secagem e finalização com produto profissional (pomada, cera ou spray).
+            </div>
+          </div>
+
+          <!-- FAQ 5: Localização e Estacionamento -->
+          <div class="bg-surface-container rounded-lg overflow-hidden border border-surface-container-high/40 transition-colors hover:border-primary/30">
+            <button 
+              type="button" 
+              class="faq-btn w-full p-5 sm:p-6 text-left flex justify-between items-center gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+              aria-expanded="false" 
+              aria-controls="faq-ans-5"
+            >
+              <span class="font-serif text-base sm:text-lg font-semibold text-on-surface">Onde fica localizada a barbearia e como estacionar?</span>
+              <span class="material-symbols-outlined text-primary text-[22px] transition-transform duration-300 shrink-0 faq-icon">expand_more</span>
+            </button>
+            <div id="faq-ans-5" class="faq-content hidden px-5 pb-5 sm:px-6 sm:pb-6 text-sm text-on-surface-variant leading-relaxed">
+              Estamos situados no número 16 da Rua Duarte Pacheco Pereira. Existem lugares de estacionamento na própria rua (com parquímetro) e um parque gratuito a apenas 5 minutos a pé.
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. LOCALIZAÇÃO E ESPAÇO -->
+    <section id="localizacao" class="w-full py-16 sm:py-24 bg-surface-container-low border-t border-surface-container">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+          
+          <!-- Informações de Contacto & Morada -->
+          <div>
+            <div class="flex items-center gap-2.5 mb-2">
+              <span class="h-[1.5px] w-7 bg-primary"></span>
+              <span class="text-xs text-primary font-semibold tracking-widest uppercase">LOCALIZAÇÃO PRIVILEGIADA</span>
+            </div>
+            <h2 class="font-serif text-2xl sm:text-4xl text-on-surface font-semibold tracking-tight mb-4">No Coração de Lisboa</h2>
+            <p class="text-sm sm:text-base text-on-surface-variant leading-relaxed mb-8">
+              Localizados na prestigiada Avenida da Liberdade, oferecemos estacionamento nas imediações e acesso fácil a transportes públicos (Metro Avenida a 2 minutos).
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+              
+              <div class="p-4 rounded-lg bg-surface-container border border-surface-container-high">
+                <span class="text-[10px] font-semibold text-primary uppercase tracking-wider block mb-1">Horário de Funcionamento</span>
+                <p class="text-sm font-semibold text-on-surface">Segunda a Sexta: 09:00 – 20:00</p>
+                <p class="text-xs text-on-surface-variant">Sábados: 09:00 – 14:00</p>
+                <p class="text-xs text-primary/80 mt-1">Domingos e Feriados: Encerrado</p>
+              </div>
+
+              <div class="p-4 rounded-lg bg-surface-container border border-surface-container-high">
+                <span class="text-[10px] font-semibold text-primary uppercase tracking-wider block mb-1">Morada Oficial</span>
+                <p class="text-sm font-semibold text-on-surface">16 R. Duarte Pacheco Pereira</p>
+                <p class="text-xs text-on-surface-variant">Estacionamento fácil na rua e parque a 5 min</p>
+                <a href="https://maps.google.com/?q=16+R.+Duarte+Pacheco+Pereira" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-xs text-primary hover:underline mt-1">
+                  <span>Abrir no Google Maps</span>
+                  <span class="material-symbols-outlined text-[13px]">open_in_new</span>
+                </a>
+              </div>
+
+            </div>
+
+            <div class="flex flex-wrap gap-4">
+              <a href="tel:+351912429615" class="h-11 px-5 rounded bg-surface-container-high text-primary hover:bg-surface-container border border-surface-container-highest text-xs font-semibold tracking-wider uppercase flex items-center gap-2">
+                <span class="material-symbols-outlined text-[18px]">call</span>
+                <span>Ligar: 912 429 615</span>
+              </a>
+              <a href="https://wa.me/351912429615" target="_blank" rel="noopener noreferrer" class="h-11 px-5 rounded bg-surface-container-high text-on-surface hover:text-primary border border-surface-container-highest text-xs font-semibold tracking-wider uppercase flex items-center gap-2">
+                <span class="material-symbols-outlined text-[18px]">chat</span>
+                <span>WhatsApp: 912 429 615</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Cartão Visual do Mapa com Estética Dark -->
+          <div class="flex flex-col rounded-xl bg-surface-container overflow-hidden gold-border-gradient shadow-xl">
+            <div class="relative w-full h-72 sm:h-80 bg-surface-container-highest overflow-hidden">
+              <img 
+                src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80" 
+                alt="Fachada distinta na Avenida da Liberdade" 
+                class="w-full h-full object-cover brightness-75 contrast-125"
+                loading="lazy" 
+                decoding="async" 
+                width="800" 
+                height="400"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent"></div>
+              
+              <!-- Tag Flutuante do Mapa -->
+              <div class="absolute bottom-4 left-4 right-4 bg-surface-container-lowest/90 backdrop-blur-md px-4 py-3 rounded-lg border border-surface-container-high flex items-center justify-between shadow-lg">
+                <div class="flex items-center gap-2.5">
+                  <span class="material-symbols-outlined text-primary text-[22px]">pin_drop</span>
+                  <div>
+                    <p class="text-xs font-bold text-on-surface">Gentlemen's Cut</p>
+                    <p class="text-[11px] text-on-surface-variant">16 R. Duarte Pacheco Pereira</p>
+                  </div>
+                </div>
+                <a 
+                  href="https://maps.google.com/?q=16+R.+Duarte+Pacheco+Pereira" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  class="w-9 h-9 rounded bg-primary text-on-primary flex items-center justify-center hover:bg-tertiary transition-colors shadow-sm" 
+                  aria-label="Navegar para a barbearia no Google Maps"
+                >
+                  <span class="material-symbols-outlined text-[18px]">directions</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================= -->
+  <!-- FOOTER OFICIAL COMPLETO                                                  -->
+  <!-- ========================================================================= -->
+  <footer class="w-full bg-surface-container-lowest border-t border-surface-container-low pt-16 pb-24 md:pb-12 text-on-surface-variant">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+        
+        <!-- Coluna 1: Identidade da Marca -->
+        <div class="md:col-span-2">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 rounded-full bg-surface-container border border-primary/40 flex items-center justify-center text-primary">
+              <span class="material-symbols-outlined text-[22px]">content_cut</span>
+            </div>
+            <div>
+              <h3 class="font-serif text-xl font-bold tracking-wider text-on-surface">GENTLEMEN'S CUT</h3>
+              <p class="text-[10px] uppercase tracking-[0.2em] text-primary font-semibold">TRADITIONAL GROOMING &amp; PRIVILEGE</p>
+            </div>
+          </div>
+          <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed max-w-md">
+            Preservamos a herança secular da mestria das tesouras e navalhas, combinando precisão contemporânea num refúgio acolhedor, discreto e distinto.
+          </p>
+          
+          <!-- Redes Sociais -->
+          <div class="flex items-center gap-3 mt-6">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-surface-container hover:bg-primary hover:text-on-primary text-on-surface flex items-center justify-center transition-colors" aria-label="Instagram">
+              <span class="material-symbols-outlined text-[18px]">photo_camera</span>
+            </a>
+            <a href="https://wa.me/351912429615" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-surface-container hover:bg-primary hover:text-on-primary text-on-surface flex items-center justify-center transition-colors" aria-label="WhatsApp">
+              <span class="material-symbols-outlined text-[18px]">chat</span>
+            </a>
+            <a href="https://gentlemenscut.pt" class="w-9 h-9 rounded-full bg-surface-container hover:bg-primary hover:text-on-primary text-on-surface flex items-center justify-center transition-colors" aria-label="Website oficial">
+              <span class="material-symbols-outlined text-[18px]">public</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Coluna 2: Acesso Rápido -->
+        <div>
+          <h4 class="text-xs font-semibold uppercase tracking-widest text-on-surface mb-4">Menu de Navegação</h4>
+          <ul class="space-y-2.5 text-xs">
+            <li><a href="#inicio" class="hover:text-primary transition-colors">Início</a></li>
+            <li><a href="#menu-servicos" class="hover:text-primary transition-colors">Serviços & Preçário</a></li>
+            <li><a href="#agendamento" class="hover:text-primary transition-colors text-primary font-medium">Marcação Online (Cal.com)</a></li>
+            <li><a href="#duvidas" class="hover:text-primary transition-colors">Perguntas Frequentes</a></li>
+            <li><a href="#localizacao" class="hover:text-primary transition-colors">Localização & Contactos</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 3: Horários & Reservas -->
+        <div>
+          <h4 class="text-xs font-semibold uppercase tracking-widest text-on-surface mb-4">Atendimento</h4>
+          <p class="text-xs text-on-surface font-medium">Segunda a Sábado</p>
+          <p class="text-xs text-on-surface-variant mb-3">09:30 – 20:30</p>
+          <p class="text-xs text-on-surface font-medium">Domingos e Feriados</p>
+          <p class="text-xs text-primary mb-4">Encerrado para descanso</p>
+          <a href="#agendamento" class="inline-block py-2 px-4 rounded bg-surface-container text-primary hover:bg-primary hover:text-on-primary text-xs font-semibold tracking-wider uppercase transition-colors">
+            Agendar Horário
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Barra de Copyright Inferior -->
+      <div class="border-t border-surface-container pt-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] text-on-surface-variant text-center sm:text-left">
+        <p>© 2025 Gentlemen's Cut. Todos os direitos reservados.</p>
+        <p class="text-primary/90 font-serif italic">Feito para verdadeiros cavalheiros.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ========================================================================= -->
+  <!-- BARRA DE NAVEGAÇÃO INFERIOR MOBILE (ESTILO DO STITCH)                    -->
+  <!-- ========================================================================= -->
+  <nav class="md:hidden fixed bottom-0 inset-x-0 z-40 bg-surface-container-lowest/95 backdrop-blur-xl border-t border-surface-container-high/80 pb-safe" aria-label="Navegação Rápida Mobile">
+    <div class="flex justify-around items-center h-15 px-2">
+      <a href="#inicio" class="flex flex-col items-center justify-center gap-1 w-16 py-1 text-primary focus:outline-none">
+        <span class="material-symbols-outlined text-[20px]">content_cut</span>
+        <span class="text-[10px] tracking-tight font-medium">Início</span>
+      </a>
+      <a href="#menu-servicos" class="flex flex-col items-center justify-center gap-1 w-16 py-1 text-on-surface-variant hover:text-on-surface focus:outline-none">
+        <span class="material-symbols-outlined text-[20px]">spa</span>
+        <span class="text-[10px] tracking-tight">Serviços</span>
+      </a>
+      <a href="#agendamento" class="flex flex-col items-center justify-center gap-1 w-16 py-1 text-primary font-bold focus:outline-none">
+        <div class="w-7 h-7 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-sm">
+          <span class="material-symbols-outlined text-[18px]">calendar_today</span>
+        </div>
+        <span class="text-[10px] tracking-tight">Marcar</span>
+      </a>
+      <a href="#duvidas" class="flex flex-col items-center justify-center gap-1 w-16 py-1 text-on-surface-variant hover:text-on-surface focus:outline-none">
+        <span class="material-symbols-outlined text-[20px]">help_outline</span>
+        <span class="text-[10px] tracking-tight">Dúvidas</span>
+      </a>
+      <a href="#localizacao" class="flex flex-col items-center justify-center gap-1 w-16 py-1 text-on-surface-variant hover:text-on-surface focus:outline-none">
+        <span class="material-symbols-outlined text-[20px]">pin_drop</span>
+        <span class="text-[10px] tracking-tight">Espaço</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- ========================================================================= -->
+  <!-- 5. WIDGET FLUTUANTE DE CHAT INTELIGENTE (ATENDIMENTO VIRTUAL)             -->
+  <!-- ========================================================================= -->
+  <div id="ai-chat-widget" class="fixed bottom-20 md:bottom-6 right-4 md:right-6 z-50 flex flex-col items-end">
+    
+    <!-- Janela de Conversa Flutuante Compacta -->
+    <div 
+      id="chat-window" 
+      class="hidden flex flex-col w-[calc(100vw-2rem)] sm:w-[380px] h-[520px] max-h-[78vh] sm:max-h-[82vh] bg-surface-container rounded-2xl border border-primary/30 shadow-[0_12px_45px_rgba(0,0,0,0.85)] overflow-hidden transition-all duration-300 mb-3"
+      role="dialog"
+      aria-label="Assistente Virtual da Gentlemen's Cut"
+    >
+      <!-- Cabeçalho do Chat (Fixo no Topo) -->
+      <div class="bg-surface-container-high px-4 py-3.5 border-b border-surface-container-highest flex items-center justify-between shrink-0">
+        <div class="flex items-center gap-3">
+          <div class="relative">
+            <div class="w-9 h-9 rounded-full bg-primary/20 border border-primary/50 flex items-center justify-center text-primary">
+              <span class="material-symbols-outlined text-[20px]">content_cut</span>
+            </div>
+            <span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-emerald-500 ring-2 ring-surface-container"></span>
+          </div>
+          <div>
+            <h3 class="text-sm font-semibold text-on-surface flex items-center gap-1.5 leading-tight">
+              Assistente Virtual
+              <span class="text-[9px] uppercase tracking-wider bg-primary/20 text-primary px-1.5 py-0.5 rounded font-bold">Oficial</span>
+            </h3>
+            <p class="text-[11px] text-on-surface-variant leading-tight">Gentlemen's Cut • Online</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-1">
+          <button 
+            type="button" 
+            id="chat-minimize-btn" 
+            onclick="toggleChat()"
+            class="w-8 h-8 rounded-lg hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors focus:outline-none cursor-pointer"
+            aria-label="Fechar janela de chat"
+          >
+            <span class="material-symbols-outlined text-[20px]">close</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Área de Mensagens (com scroll vertical isolado e min-h-0) -->
+      <div 
+        id="chat-messages" 
+        class="flex-1 min-h-0 overflow-y-auto overscroll-contain p-4 space-y-3.5 text-xs leading-relaxed"
+        tabindex="0"
+      >
+        
+        <!-- Mensagem de Boas-Vindas do Assistente -->
+        <div class="flex items-start gap-2.5">
+          <div class="w-7 h-7 rounded-full bg-primary/20 border border-primary/40 flex items-center justify-center text-primary shrink-0 mt-0.5">
+            <span class="material-symbols-outlined text-[15px]">content_cut</span>
+          </div>
+          <div class="bg-surface-container-high text-on-surface p-3 rounded-2xl rounded-tl-sm border border-surface-container-highest max-w-[85%] shadow-sm">
+            <p>Olá! Sou o assistente virtual da <strong>Gentlemen's Cut</strong>.</p>
+            <p class="mt-1 text-on-surface-variant">Estou aqui para esclarecer qualquer dúvida sobre os nossos cortes, barba, preços, agendamentos ou localização.</p>
+          </div>
+        </div>
+
+        <!-- Sugestões de Perguntas Rápidas (Chips) -->
+        <div id="chat-quick-chips" class="pt-1 flex flex-wrap gap-1.5">
+          <button type="button" onclick="sendQuickChip('Qual é o valor do corte e da barba?')" class="chat-chip px-2.5 py-1.5 rounded-full bg-surface-container-high/90 hover:bg-primary/20 hover:text-primary text-[11px] text-on-surface border border-surface-container-highest transition-colors cursor-pointer text-left">
+            💈 Preços dos serviços
+          </button>
+          <button type="button" onclick="sendQuickChip('É preciso fazer marcação ou aceitam sem marcação?')" class="chat-chip px-2.5 py-1.5 rounded-full bg-surface-container-high/90 hover:bg-primary/20 hover:text-primary text-[11px] text-on-surface border border-surface-container-highest transition-colors cursor-pointer text-left">
+            📅 É preciso marcação?
+          </button>
+          <button type="button" onclick="sendQuickChip('Qual é o horário e onde fica a barbearia?')" class="chat-chip px-2.5 py-1.5 rounded-full bg-surface-container-high/90 hover:bg-primary/20 hover:text-primary text-[11px] text-on-surface border border-surface-container-highest transition-colors cursor-pointer text-left">
+            ⏰ Horário e Morada
+          </button>
+          <button type="button" onclick="sendQuickChip('Fazem corte a crianças? Qual o valor?')" class="chat-chip px-2.5 py-1.5 rounded-full bg-surface-container-high/90 hover:bg-primary/20 hover:text-primary text-[11px] text-on-surface border border-surface-container-highest transition-colors cursor-pointer text-left">
+            👶 Corte para crianças
+          </button>
+        </div>
+
+        <!-- Indicador de Digitação (Oculto inicialmente) -->
+        <div id="chat-typing-indicator" class="hidden items-center gap-2 text-on-surface-variant text-[11px] pl-9">
+          <div class="flex gap-1.5 items-center bg-surface-container-high px-3 py-1.5 rounded-full border border-surface-container-highest">
+            <span class="w-1.5 h-1.5 rounded-full bg-primary animate-bounce"></span>
+            <span class="w-1.5 h-1.5 rounded-full bg-primary animate-bounce [animation-delay:0.2s]"></span>
+            <span class="w-1.5 h-1.5 rounded-full bg-primary animate-bounce [animation-delay:0.4s]"></span>
+            <span class="text-[10px] ml-1 text-on-surface-variant">A escrever...</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Rodapé / Formulário de Envio (Fixo na Base) -->
+      <form id="chat-form" onsubmit="handleChatSubmit(event)" class="p-3 bg-surface-container-high border-t border-surface-container-highest flex items-center gap-2 shrink-0">
+        <input 
+          type="text" 
+          id="chat-input" 
+          placeholder="Pergunte algo (ex: quanto custa o corte?)..." 
+          autocomplete="off"
+          class="flex-1 bg-surface-container text-on-surface placeholder:text-on-surface-variant/60 text-xs px-3.5 py-2.5 rounded-xl border border-surface-container-highest focus:outline-none focus:border-primary transition-colors"
+        />
+        <button 
+          type="submit" 
+          id="chat-submit-btn" 
+          class="w-9 h-9 rounded-xl bg-primary text-on-primary hover:bg-tertiary flex items-center justify-center transition-all disabled:opacity-40 disabled:cursor-not-allowed shrink-0 shadow-sm cursor-pointer"
+          aria-label="Enviar mensagem"
+        >
+          <span class="material-symbols-outlined text-[18px]">send</span>
+        </button>
+      </form>
+    </div>
+
+    <!-- Gatilho Flutuante do Chat (Botão e Pill Informativo) -->
+    <div class="flex items-center gap-2.5">
+      <!-- Tooltip Pill Chamativo -->
+      <button 
+        id="chat-pill-tooltip" 
+        type="button"
+        onclick="toggleChat()"
+        class="hidden sm:flex items-center gap-2 bg-surface-container-high/95 backdrop-blur-md px-3.5 py-2 rounded-full border border-primary/40 shadow-lg text-xs text-on-surface hover:border-primary transition-all cursor-pointer group"
+      >
+        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+        <span class="font-medium group-hover:text-primary transition-colors">Dúvidas? Fale connosco</span>
+      </button>
+
+      <!-- Botão Redondo com Ícone -->
+      <button 
+        type="button" 
+        id="chat-toggle-btn" 
+        onclick="toggleChat()"
+        class="w-13 h-13 sm:w-14 sm:h-14 rounded-full bg-primary text-on-primary hover:bg-tertiary shadow-[0_4px_25px_rgba(233,193,118,0.4)] flex items-center justify-center transition-transform hover:scale-105 active:scale-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary relative cursor-pointer"
+        aria-label="Abrir assistente virtual"
+        aria-expanded="false"
+      >
+        <span class="material-symbols-outlined text-[26px]" id="chat-toggle-icon">chat</span>
+        <span class="absolute -top-0.5 -right-0.5 w-3.5 h-3.5 bg-emerald-500 rounded-full border-2 border-surface flex items-center justify-center"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- JAVASCRIPT DE PRODUÇÃO VANILLA (SEM DEPENDÊNCIAS EXTERNAS)                -->
+  <!-- ========================================================================= -->
+  <script type="text/javascript">
+    /**
+     * =========================================================================
+     * 1. CONFIGURAÇÃO OFICIAL DO CAL.COM (LINK FIXO E DEFINIDO)
+     * =========================================================================
+     */
+    const CAL_LINK = "jose-lopes-r6m7oq";
+
+    /**
+     * Inicialização e montagem do Cal.com diretamente no container
+     */
+    function initCalEmbed() {
+      if (window.Cal) {
+        window.Cal("inline", {
+          elementOrSelector: "#cal-inline-embed",
+          calLink: CAL_LINK,
+          config: {
+            layout: "month_view",
+            theme: "dark",
+          }
+        });
+
+        // Configuração de Estilo do Tema Escuro e Paleta Dourada
+        window.Cal("ui", {
+          theme: "dark",
+          styles: {
+            branding: {
+              brandColor: "#c5a059", // Dourado artesanal da marca
+            }
+          },
+          hideEventTypeDetails: false,
+          layout: "month_view"
+        });
+      }
+    }
+
+    /**
+     * Seleção Interativa de Serviços:
+     * Ao clicar em "Selecionar Serviço" num dos cartões do Menu, 
+     * faz o scroll suave até à agenda e destaca visualmente o serviço escolhido.
+     */
+    function selectServiceAndScroll(serviceName, serviceDetails) {
+      const banner = document.getElementById("service-selected-banner");
+      const nameElem = document.getElementById("selected-service-name");
+      if (banner && nameElem) {
+        nameElem.textContent = `${serviceName} (${serviceDetails})`;
+        banner.classList.remove("hidden");
+        banner.classList.add("inline-flex");
+      }
+
+      const bookingSection = document.getElementById("agendamento");
+      if (bookingSection) {
+        bookingSection.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }
+
+    function clearServiceSelection() {
+      const banner = document.getElementById("service-selected-banner");
+      if (banner) {
+        banner.classList.add("hidden");
+        banner.classList.remove("inline-flex");
+      }
+    }
+
+    /**
+     * 2. Menu Mobile (Drawer / Hamburger)
+     */
+    const menuBtn = document.getElementById("mobile-menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const menuIcon = document.getElementById("menu-icon");
+
+    if (menuBtn && mobileMenu && menuIcon) {
+      menuBtn.addEventListener("click", () => {
+        const isExpanded = menuBtn.getAttribute("aria-expanded") === "true";
+        menuBtn.setAttribute("aria-expanded", !isExpanded);
+        mobileMenu.classList.toggle("hidden");
+        menuIcon.textContent = isExpanded ? "menu" : "close";
+      });
+
+      // Fechar o menu ao clicar num link de navegação
+      document.querySelectorAll(".mobile-nav-link").forEach(link => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.add("hidden");
+          menuBtn.setAttribute("aria-expanded", "false");
+          menuIcon.textContent = "menu";
+        });
+      });
+    }
+
+    /**
+     * 3. FAQ Accordion Fluido e Acessível
+     */
+    document.querySelectorAll(".faq-btn").forEach(button => {
+      button.addEventListener("click", () => {
+        const content = button.nextElementSibling;
+        const icon = button.querySelector(".faq-icon");
+        const isExpanded = button.getAttribute("aria-expanded") === "true";
+
+        // Fecha outros itens para comportamento de acordeão limpo
+        document.querySelectorAll(".faq-btn").forEach(otherBtn => {
+          if (otherBtn !== button) {
+            otherBtn.setAttribute("aria-expanded", "false");
+            if (otherBtn.nextElementSibling) otherBtn.nextElementSibling.classList.add("hidden");
+            const otherIcon = otherBtn.querySelector(".faq-icon");
+            if (otherIcon) otherIcon.style.transform = "rotate(0deg)";
+          }
+        });
+
+        // Alterna o item atual
+        if (isExpanded) {
+          button.setAttribute("aria-expanded", "false");
+          content.classList.add("hidden");
+          if (icon) icon.style.transform = "rotate(0deg)";
+        } else {
+          button.setAttribute("aria-expanded", "true");
+          content.classList.remove("hidden");
+          if (icon) icon.style.transform = "rotate(180deg)";
+        }
+      });
+    });
+
+    /**
+     * 4. Efeito de Sombra e Redução do Header no Scroll
+     */
+    const mainHeader = document.getElementById("main-header");
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 30) {
+        mainHeader.classList.add("shadow-[0_4px_20px_rgba(0,0,0,0.6)]", "bg-surface/95");
+      } else {
+        mainHeader.classList.remove("shadow-[0_4px_20px_rgba(0,0,0,0.6)]", "bg-surface/95");
+      }
+    });
+
+    /**
+     * =========================================================================
+     * 5. ASSISTENTE VIRTUAL DE ATENDIMENTO COM IA & FAQS (CHAT FLUTUANTE)
+     * =========================================================================
+     */
+    let chatHistory = [];
+    let isChatOpen = false;
+
+    function toggleChat() {
+      const chatWindow = document.getElementById("chat-window");
+      const toggleBtn = document.getElementById("chat-toggle-btn");
+      const toggleIcon = document.getElementById("chat-toggle-icon");
+      const pillTooltip = document.getElementById("chat-pill-tooltip");
+      const chatInput = document.getElementById("chat-input");
+
+      isChatOpen = !isChatOpen;
+
+      if (isChatOpen) {
+        chatWindow.classList.remove("hidden");
+        chatWindow.classList.add("flex");
+        toggleBtn.setAttribute("aria-expanded", "true");
+        toggleIcon.textContent = "close";
+        if (pillTooltip) pillTooltip.classList.add("hidden");
+        setTimeout(() => {
+          chatInput.focus();
+          scrollChatToBottom();
+        }, 150);
+      } else {
+        chatWindow.classList.add("hidden");
+        chatWindow.classList.remove("flex");
+        toggleBtn.setAttribute("aria-expanded", "false");
+        toggleIcon.textContent = "chat";
+      }
+    }
+
+    function scrollChatToBottom() {
+      const messagesContainer = document.getElementById("chat-messages");
+      if (messagesContainer) {
+        messagesContainer.scrollTo({
+          top: messagesContainer.scrollHeight,
+          behavior: "smooth"
+        });
+      }
+    }
+
+    function sendQuickChip(text) {
+      const input = document.getElementById("chat-input");
+      if (input) {
+        input.value = text;
+        handleChatSubmit(new Event("submit"));
+      }
+    }
+
+    function formatChatReply(text) {
+      if (!text) return "";
+      let escaped = text
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;");
+      
+      // Negrito **texto**
+      escaped = escaped.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
+      // Itálico *texto*
+      escaped = escaped.replace(/(^|[^\*])\*([^*\n]+?)\*(?!\*)/g, "$1<em>$2</em>");
+      // Marcadores de lista "- item" ou "* item"
+      escaped = escaped.replace(/^[\*\-] (.+)$/gm, "<span class='block pl-3 my-0.5 border-l-2 border-primary/40'>• $1</span>");
+      // Quebras de linha
+      return escaped.replace(/\n/g, "<br />");
+    }
+
+    async function handleChatSubmit(e) {
+      if (e && e.preventDefault) e.preventDefault();
+      
+      const input = document.getElementById("chat-input");
+      const submitBtn = document.getElementById("chat-submit-btn");
+      const messagesContainer = document.getElementById("chat-messages");
+      const typingIndicator = document.getElementById("chat-typing-indicator");
+
+      const userText = input.value.trim();
+      if (!userText) return;
+
+      // Desabilita input durante envio
+      input.value = "";
+      input.disabled = true;
+      submitBtn.disabled = true;
+
+      // Oculta chips de perguntas rápidas após primeira interação
+      const quickChips = document.getElementById("chat-quick-chips");
+      if (quickChips) quickChips.classList.add("hidden");
+
+      // Adiciona bolha do utilizador
+      const userBubble = document.createElement("div");
+      userBubble.className = "flex justify-end";
+      userBubble.innerHTML = `
+        <div class="bg-primary text-on-primary font-medium p-3 rounded-2xl rounded-tr-sm max-w-[85%] shadow-sm">
+          ${userText.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")}
+        </div>
+      `;
+      messagesContainer.insertBefore(userBubble, typingIndicator);
+      scrollChatToBottom();
+
+      // Mostra o indicador de digitação
+      typingIndicator.classList.remove("hidden");
+      typingIndicator.classList.add("flex");
+      scrollChatToBottom();
+
+      try {
+        const response = await fetch("/api/chat", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            message: userText,
+            history: chatHistory
+          })
+        });
+
+        const data = await response.json();
+        const replyText = data.reply || "Desculpe, de momento não tenho essa informação. Por favor, contacte o nosso salão diretamente através do telefone 912 429 615 ou visite-nos na 16 R. Duarte Pacheco Pereira.";
+
+        // Atualiza histórico local
+        chatHistory.push({ role: "user", text: userText });
+        chatHistory.push({ role: "model", text: replyText });
+
+        // Adiciona bolha de resposta do assistente
+        const assistantBubble = document.createElement("div");
+        assistantBubble.className = "flex items-start gap-2.5";
+        assistantBubble.innerHTML = `
+          <div class="w-7 h-7 rounded-full bg-primary/20 border border-primary/40 flex items-center justify-center text-primary shrink-0 mt-0.5">
+            <span class="material-symbols-outlined text-[15px]">content_cut</span>
+          </div>
+          <div class="bg-surface-container-high text-on-surface p-3 rounded-2xl rounded-tl-sm border border-surface-container-highest max-w-[85%] shadow-sm">
+            ${formatChatReply(replyText)}
+          </div>
+        `;
+        messagesContainer.insertBefore(assistantBubble, typingIndicator);
+
+      } catch (err) {
+        console.error("Erro na comunicação com o assistente:", err);
+        const errorBubble = document.createElement("div");
+        errorBubble.className = "flex items-start gap-2.5";
+        errorBubble.innerHTML = `
+          <div class="w-7 h-7 rounded-full bg-primary/20 border border-primary/40 flex items-center justify-center text-primary shrink-0 mt-0.5">
+            <span class="material-symbols-outlined text-[15px]">content_cut</span>
+          </div>
+          <div class="bg-surface-container-high text-on-surface p-3 rounded-2xl rounded-tl-sm border border-surface-container-highest max-w-[85%] shadow-sm">
+            Desculpe, não tenho essa informação. Por favor, contacte o nosso salão diretamente através do telefone <strong>912 429 615</strong> ou visite-nos na <strong>16 R. Duarte Pacheco Pereira</strong>.
+          </div>
+        `;
+        messagesContainer.insertBefore(errorBubble, typingIndicator);
+      } finally {
+        typingIndicator.classList.add("hidden");
+        typingIndicator.classList.remove("flex");
+        input.disabled = false;
+        submitBtn.disabled = false;
+        input.focus();
+        scrollChatToBottom();
+      }
+    }
+
+    // Inicia o Cal.com quando o DOM estiver pronto
+    document.addEventListener("DOMContentLoaded", () => {
+      initCalEmbed();
+    });
+  </script>
+</body>
+</html>
